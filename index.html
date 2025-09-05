@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교보문고</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<header>
+    <div class="container">
+        <div class="header_top">
+            <div class="sub_navi">
+                <ul>
+                    <ol>교보문고</ol>
+                    <ol>eBook</ol>
+                    <ol>sam</ol>
+                    <ol>핫트랙스</ol>
+                    <ol>스토리</ol>
+                    <ol>브랜드 더보기</ol>
+                </ul>
+            </div>
+            <div class="login">
+                <ul>
+                    <ol>회원가입</ol>
+                    <ol>로그인</ol>
+                    <ol>회원혜택</ol>
+                    <ol>주문배송</ol>
+                    <ol>매장안내</ol>
+                    <ol>고객센터</ol>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="header_left">
+                <div class="logo"></div>
+                <div class="search"></div>
+                <div class="main_menu">
+                    <ul>
+                        <ol><i class="fa-solid fa-bars"></i></ol>
+                        <ol>신학기혜택</ol>
+                        <ol>버핏과멍거</ol>
+                        <ol>베스트</ol>
+                        <ol>신상품</ol>
+                        <ol>이벤트</ol>
+                        <ol>바로펀딩</ol>
+                        <ol>PICKS</ol>
+                        <ol>CASTing</ol>
+                        <ol>컬처라운지</ol>
+                    </ul>
+                </div>
+            </div>
+                <div class="header_right">
+                    <div class="mypage">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="mission">
+                        <ul>
+                            <ol>오늘의 미션</ol>
+                            <ol>할인혜택</ol>
+                            <ol>버핏과 멍거</ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="slider">
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="most">
+        <!-- Swiper -->
+        <div class="swiper most_book">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer_left">
+                <ul>
+                    <ol>회사소개</ol>
+                    <ol>이용약관</ol>
+                    <ol>개인정보처리방침</ol>
+                    <ol>청소년보호정책</ol>
+                    <ol>대량주문안내</ol>
+                    <ol>협력사여러분</ol>
+                    <ol>채용정보</ol>
+                    <ol>광고소개</ol>
+                </ul>
+            </div>
+            <div class="footer_right">
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+<script>
+    // // slider
+    // var swiper = new Swiper(".mySwiper", {
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
+
+    var swiper = new Swiper(".slider", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+    });
+    // most_book
+    var swiper = new Swiper(".most_book", {
+        slidesPerView: 6,
+        spaceBetween: 24,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+
+</script>
+
+</body>
+</html>
