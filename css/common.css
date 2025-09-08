@@ -1,24 +1,45 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'GowoonDodum';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul, ol {list-style: none;}
 a {text-decoration: none; color: #333;}
 body {font-family: "GowoonDodum";}
-.container {width: 1320px; height: 100%; margin: 0 auto; background-color:#aaa;}
+.container {width: 1320px; height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 auto; background-color:#aaa;}
 
 /* header */
 header {width: 100%; height: 300px; background-color:gold;}
 
-.header_top {width: 100%; height: 40%; display: flex; justify-content:right; align-items:flex-end; background-color:pink;}
+.header_top {width: 100%; height: 40%; display: flex; justify-content:space-between; align-items:flex-end; background-color:pink;}
+.header_top .left {display: flex;}
+.header_top .left >svg {position: relative;}
 .header_bottom {width: 100%; height: 60%; display: flex; align-content: center; background-color:aquamarine;}
 
 /* header top */
-.sub_navi {width: 670px; height: 38px; margin-right: 51px; background-color:white;}
+.sub_navi {width: 670px; height: 38px; margin-left: -130px; margin-top:5px; background-color:white;}
 .login {width: 395px; height:38px; background-color:tomato;}
 .nav ul {margin: 5px auto; display: flex; text-align: center; justify-content: space-evenly;}
 
@@ -30,18 +51,19 @@ header {width: 100%; height: 300px; background-color:gold;}
 .main_menu {width: 915px; height: 50px; margin : 5px 0px; background-color:red;}
 .main_menu ul {margin: 12px auto; display: flex; text-align: center; justify-content: space-evenly;}
 
-.header_right {width: 400px; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-end; background-color: beige;}
-.mypage {width: 117px; height: 60px; background-color: blue;}
-.mypage i {margin: 15px 0 0 15px; font-size: 30px; text-align: center; justify-content: space-evenly;}
+.header_right {width: 400px; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-end; margin: 3px; background-color: beige;}
+.mypage {width: 117px; height: 60px; display: flex;  justify-content: space-evenly; align-items: center; background-color: blue;}
 .mission {width: 270px; height: 50px; background-color:aqua;}
 .mission ul {margin: 12px auto; display: flex; text-align: center; justify-content: space-evenly;}
 
+/* foot banner */
+.banner {width: 1320px; height: 70px; margin:0 auto; display: flex; background-color: slategrey;}
 
 /* footer */
 footer {width: 100%; height: 320px; display: flex; background-color: orange;}
 footer ul {display: flex; text-align: center; justify-content: space-evenly;}
-.footer_left {width: 875px; height: 100%; background-color: blueviolet;}
-.footer_right {width: 425px; height: 100%; background-color: burlywood;}
+.footer_left {width: 875px; height: 100%;  background-color: blueviolet;}
+.footer_right {width: 425px; height: 100%;  background-color: burlywood;}
 
 /* footer_left */
 .f_logo {width: 175px; height: 75px; background-color: tomato;}
