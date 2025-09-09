@@ -100,8 +100,21 @@
         </div>
         <div class="header_bottom">
             <div class="header_left">
-                <div class="logo"></div>
-                <div class="search"></div>
+                <div class="logo">
+                    <img alt="교보문고" loading="eager" width="180" height="66" decoding="async" data-nimg="1" style="color: transparent; width: 180px; height: 66px;" src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg">
+                </div>
+                <div class="search">
+                    <option>
+                        <select>통합검색</select>
+                        <!-- <select>교보문고</select>
+                        <select>eBook</select>
+                        <select>sam</select>
+                        <select>핫트랙스</select> -->
+                    </option>
+                    <input type = "search" class="search_b">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 16 16" stroke="black"><desc>검색 아이콘</desc><g stroke="current" clip-path="url(#ico_search_svg__a)"><path d="M7 11.333a4.333 4.333 0 1 0 0-8.666 4.333 4.333 0 0 0 0 8.666Z"></path><path stroke-linecap="round" d="m10.333 10.333 3 3"></path></g><defs><clipPath id="ico_search_svg__a"><path fill="#fff" d="M0 0h16v16H0z"></path></clipPath></defs></svg>
+                    
+                </div>
                 <div class="main_menu">
                     <ul>
                         <li><i class="fa-solid fa-bars"></i></li>
@@ -114,6 +127,7 @@
                         <li>PICKS</li>
                         <li>CASTing</li>
                         <li>컬처라운지</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><desc>더보기 활성화 전 아이콘</desc><g clip-path="url(#ico_more_svg__a)"><path fill="#EAEAEA" d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10"></path><path fill="#767676" d="M9.5 13.5v-3h-3v-1h3v-3h1v3h3v1h-3v3z"></path></g><defs><clipPath id="ico_more_svg__a"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg></li>
                     </ul>
                 </div>
             </div>
@@ -136,23 +150,24 @@
 
 <!-- slider -->
 <div id="slider">
-    <div class="swiper slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+    <div class="slider_i">
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
     </div>
-
     <div class="funding">
         <div class="swiper s_funding">
         <div class="swiper-wrapper">
@@ -215,14 +230,32 @@
 
 <!-- content1 -->
     <div class="content1">
-    <h3>오늘의 선택</h3>
+        <div class="today_nav">
+            <h1>오늘의 선택</h1>
+            <ul>
+                <li>국내도서</li>
+                <li>외국도서</li>
+                <li>eBook</li>
+                <li>sam</li>
+                <li>핫트랙스</li>
+                <li>교보only</li>
+            </ul>
+        </div>
+    <button class="plus">더보기 +</button>
+    <div class="today_book"></div>
+    <div class="today_ad"></div>
+    <div class="today_ad"></div>
     </div>
 
 
 <!-- content2 -->
     <div class="content2">
         <div class="swiper author">
-            <h2> 61인의 작가가 권하는 한 권의 책</h2>
+            <div class="author_button">
+                <h2> 61인의 작가가 권하는 한 권의 책</h2>
+                <button class="plus">더보기 +</button>
+            </div>
+            <br>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide 1</div>
                 <div class="swiper-slide">Slide 2</div>
@@ -238,6 +271,7 @@
         </div>
         <div class="swiper pub">
             <h2>출판사에서 자신있게 추천해요</h2>
+            <br>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">Slide 1</div>
                 <div class="swiper-slide">Slide 2</div>
@@ -255,27 +289,30 @@
 
 <!-- content3 -->
     <div class="content3">
-        <div class="swiper MD">
-            <h2>MD들이 신중하게 골랐어요</h2>
-            <ul>
-                <li>국내도서</li>
-                <li>외국도서</li>
-                <li>eBook</li>
-                <li>sam</li>
-                <li>핫트랙스</li>
-                <li>교보only</li>
-            </ul>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
+               <h2>MD들이 신중하게 골랐어요</h2>
+                <ul>
+                    <li>국내도서</li>
+                    <li>외국도서</li>
+                    <li>eBook</li>
+                    <li>sam</li>
+                    <li>핫트랙스</li>
+                    <li>교보only</li>
+                </ul>
+                <button class="plus">더보기 +</button>
+        <div class="md_pick">
+            <div class="swiper MD">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                </div>
             </div>
         </div>
     </div>
@@ -283,29 +320,76 @@
 
     <!-- footer -->
 
-    <hr>
-    <div class="banner"></div>
-    <hr>
+    <div class="banner">
+        <div class="b_left">
+            <span><b>공지사항</b></span>
+            <button class="plus">더보기 +</button>
+        </div>
+        <div class="b_right">
+            <span><b>당첨자발표</b></span>
+            <button class="plus">더보기 +</button>
+        </div>
+    </div>
+    
 
     <footer>
         <div class="container">
             <div class="footer_left">
+                <div class="f_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="55" fill="none" viewBox="0 0 150 55"><path fill="#081D58" d="M37.663 29.31a6.94 6.94 0 0 0-5.052 1.906 8.42 8.42 0 0 0-2.152 6.075 8.42 8.42 0 0 0 2.152 6.074 7.625 7.625 0 0 0 10.125 0 8.52 8.52 0 0 0 2.125-6.074 8.51 8.51 0 0 0-2.125-6.075 7 7 0 0 0-5.073-1.905m2.922 12.39a3.64 3.64 0 0 1-2.922 1.334 3.6 3.6 0 0 1-2.903-1.333 7.16 7.16 0 0 1-1.139-4.412 7.2 7.2 0 0 1 1.14-4.41 3.58 3.58 0 0 1 2.902-1.313 3.62 3.62 0 0 1 2.922 1.312 7.2 7.2 0 0 1 1.125 4.411 7.15 7.15 0 0 1-1.125 4.412M77.118 31.216a7.69 7.69 0 0 0-10.133 0 8.45 8.45 0 0 0-2.137 6.075 8.46 8.46 0 0 0 2.145 6.074 7.633 7.633 0 0 0 10.132 0 8.5 8.5 0 0 0 2.125-6.074 8.48 8.48 0 0 0-2.125-6.075m-2.15 10.485a3.85 3.85 0 0 1-5.83 0 7.2 7.2 0 0 1-1.134-4.41 7.24 7.24 0 0 1 1.134-4.41 3.893 3.893 0 0 1 5.83 0 7.2 7.2 0 0 1 1.125 4.412 7.15 7.15 0 0 1-1.125 4.41M23.34 44.924a1.46 1.46 0 0 1-.387-1.068v-5.545l5.17-8.663h-3.54c.25.25.28.662-.03 1.15l-2.798 4.85c-2.354-4.262-2.351-4.383-2.778-5.16-.331-.585-.614-.84-1.242-.84h-2.788c.366.391.678.83.925 1.306l4.125 7.317v5.584a1.46 1.46 0 0 1-.385 1.068zM49.791 44.924a1.45 1.45 0 0 0 .389-1.068V30.71a1.44 1.44 0 0 0-.389-1.066h5.059c2.425 0 4.542 1.17 4.542 3.442a3.38 3.38 0 0 1-1.561 2.928 4.125 4.125 0 0 1 2.804 3.907 4.75 4.75 0 0 1-1.841 3.762 6.03 6.03 0 0 1-3.944 1.237zm3.35-9.508a5 5 0 0 0 2.16-.26 1.64 1.64 0 0 0 1.038-1.585 1.834 1.834 0 0 0-1.97-1.726 3.9 3.9 0 0 0-1.228.156zm3.31 6.935a2.42 2.42 0 0 0 1.079-2.24 2.59 2.59 0 0 0-2.888-2.446 11 11 0 0 0-1.5.088v4.896a4.82 4.82 0 0 0 3.31-.299M1.637 43.856a1.45 1.45 0 0 1-.388 1.068h3.735a1.45 1.45 0 0 1-.387-1.068v-5.968l4.336 6.197a1.47 1.47 0 0 0 1.34.843h3a7.2 7.2 0 0 1-1.076-1.308l-4.9-6.942 5-7.03H8.623c.19.25.215.56-.144 1.162l-3.875 5.598V30.71a1.44 1.44 0 0 1 .388-1.067H1.248a1.44 1.44 0 0 1 .388 1.067z"></path><path fill="#45B035" d="M84.044 8.725a3.53 3.53 0 0 0-5.057.276c-1.767 1.858-3.14 2.55-4.777 2.48-2.285-.1-3.412-1.866-4.586-4.096a6.02 6.02 0 0 0-5.425-3.634 5.927 5.927 0 0 0-5.875 6.297A10.77 10.77 0 0 0 64.4 19.5c1.99.999 4.18 1.537 6.408 1.574a19.3 19.3 0 0 1-.875 3.976h4.203a19 19 0 0 1-.89-4.11c6.157-.799 9.08-3.599 10.682-6.264a6.75 6.75 0 0 0 1.099-3.47 3.42 3.42 0 0 0-.973-2.482M64.228 11.92a2.153 2.153 0 1 1-.3-4.295 2.153 2.153 0 0 1 .3 4.295"></path><path fill="#081D58" d="M141.741 35.4h-2.322v6.95h-4.435v1.82h13.773v-1.82h-7.01z"></path><path fill="#081D58" d="M144.825 40.583h1.514c.567-2.915.97-6.56 1.205-9 .131-1.318.137-2.008-1.047-2.008h-10.345v1.819h8.673zM121.627 35.552h10.068v-6.039h-11.51v4.596a1.29 1.29 0 0 0 .358 1.085 1.28 1.28 0 0 0 1.084.363m7.478-1.824h-6.328v-2.401h6.328zM123.092 39.817h-2.588v3.584c-.029.195-.012.395.049.583a1.28 1.28 0 0 0 .803.808c.188.063.387.082.583.054h9.786v-1.82h-8.635z"></path><path fill="#081D58" d="M118.889 38.638h6.015v2.835h2.588v-2.835h5.482v-1.82h-14.085zM95.01 35.891h-2.32v6.458H91.11V35.89h-2.322v6.458h-3.14v1.821h14.337V42.35h-4.979z"></path><path fill="#081D58" d="M96.317 40.583h1.512c.569-2.915.969-6.56 1.206-9 .125-1.318.14-2.008-1.047-2.008H87.195v1.819h9.125zM110.733 39.242h-2.589v3.108h-5.923v1.82h14.35v-1.822h-5.838zM105.674 38.263h7.437a1.276 1.276 0 0 0 1.442-1.445v-7.394h-2.594v3h-5.135v-3h-2.594v7.394a1.274 1.274 0 0 0 1.444 1.445m6.286-4.027v2.462h-5.135v-2.462z"></path></svg>
+                </div>
                 <div class="f_nav">
                     <ul>
-                        <ol>회사소개</ol>
-                        <ol>이용약관</ol>
-                        <ol>개인정보처리방침</ol>
-                        <ol>청소년보호정책</ol>
-                        <ol>대량주문안내</ol>
-                        <ol>협력사여러분</ol>
-                        <ol>채용정보</ol>
-                        <ol>광고소개</ol>
+                        <li>회사소개</li>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>청소년보호정책</li>
+                        <li>대량주문안내</li>
+                        <li>협력사여러분</li>
+                        <li>채용정보</li>
+                        <li>광고소개</li>
                     </ul>
                 </div>
-
-                <div class="f_info"></div>
+                <div class="f_info">
+                    <ul>
+                        <li>대표이사 : 허정도</li>
+                        <li>서울특별시 종로구 종로1</li>
+                        <li>사업자등록번호 : 102-81-11670</li>
+                        <li><b>대표전화 : 1544-1900(발신자 부담전화)</b></li>
+                        <li>FAX : 0502-987-5711(지역번호 공통)</li>
+                        <li>서울특별시 통신판매업신고번호 : 제 653호 <button> 사업자정보확인 </button></li>
+                    </ul>
+                    <br>
+                    <span> KYOBO BOOK CENTRE</span>
+                </div>
             </div>
-            <div class="footer_right"></div>
+            <div class="footer_right">
+                <select>
+                    <option value="교보생명">교보생명</option>
+                    <option value="교보증권">교보증권</option>
+                    <option value="교보DTS">교보DTS</option>
+                    <option value="교보리얼코">교보리얼코</option>
+                    <option value="교보악사자산운용">교보악사자산운용</option>
+                    <option value="교보라이프플래닛생명">교보라이프플래닛생명</option>
+                    <option value="KCA손해사정">KCA손해사정</option>
+                    <option value="KCA 서비스">KCA 서비스</option>
+                    <option value="교보자산신탁주식회사">교보자산신탁주식회사</option>
+                    <option value="교보AIM자산운용">교보AIM자산운용</option>
+                    <option value="교보다솜케어">교보다솜케어</option>
+                    <option value="A&D신용정보">A&D신용정보</option>
+                    <option value="대산문화재단">대산문화재단</option>
+                    <option value="교보교육재단">교보교육재단</option>
+                    <option value="대산농촌재단">대산농촌재단</option>
+                </select>
+                <div class="sns">
+                    <img alt="유튜브" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_footer_sns_youtube_v2@2x.png">
+                    <img alt="facebook" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_footer_sns_fb_v2@2x.png"></a>
+                    <img alt="인스타" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" style="color:transparent" src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_footer_sns_insta_v2@2x.png">
+                </div>
+                <p>토스페이먼츠 구매안전서비스</p>
+                <p>고객님은 안전거리를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+                <p>정보보호관리체계 <br> ISMS 인증획득</p>
+            </div>
         </div>
     </footer>
 
