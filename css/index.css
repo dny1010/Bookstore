@@ -1,27 +1,79 @@
 @charset "UTF-8";
 
-/* slider */
-#slider {width: 1320px; height: 530px; margin:0 auto; background-color: green;}
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
 
+.plus {width: 65px; height: 40px;}
+
+/* slider */
+#slider {width: 1320px; height: 590px; margin:0 auto;  display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-around;}
+.swiper {width: 100%; height: 100%;}
 .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #444;
+
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      /* align-items: center;/ */
+      height: 100%;
     }
+
+
+
+
+.slider .swiper-button-prev, .slider .swiper-button-next {top: auto; bottom: 10px;width:20px; height: 20px; }
+.slider .swiper-button-prev {left: auto; right: 100px;}
+.slider .swiper-button-next {right: 40px; z-index:11;}
+.slider .swiper-button-prev::after, .slider .swiper-button-next::after {font-size: 20px;}
+.slider .swiper-pagination {padding: 2px; left: 410px; right: auto;}
 
 .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
+      /* height: 100%;/ */
       object-fit: cover;
         }
-.swiper-pagination {text-align:end;}
 
-.most_book {width: 1320px; height: 360px; margin: 20px auto;}
+.slider_i {width: 980px; height: 420px;}
+
+/* funding */
+.s_funding {width: 300px; height: 420px; border-radius: 10px; border: 1px solid #dddddd; display:flex;}
+.s_funding img {width: 100%; height: auto;}
+.s_funding div {background-color: #fff;}
+.s_funding div p {padding-top: 12px; font-size:15px; color:#aaa;}
+.s_funding .swiper-slide {align-items:flex-start;}
+.s_funding .swiper-button-prev, .s_funding .swiper-button-next {top: auto; bottom: 10px; width:20px; height: 20px; }
+.s_funding .swiper-button-prev {left: 100px;}
+.s_funding .swiper-button-next {right: 100px; z-index:11;}
+.s_funding .swiper-button-prev::after, .s_funding .swiper-button-next::after {font-size: 20px;}
+.s_funding .swiper-pagination {padding: 2px;}
+
+.img_nav {width: 980px; height:110px; display: flex; justify-content: space-between; text-align: center; padding: 10px;}
+.mission_nav {width: 300px; height: 110px; display: flex; justify-content:center; align-items: center;}
+.mission_nav img {width: 100%; border-radius: 15px;}
+
+/* content1 */
+.content1 {width: 1320px; height: 720px; display: flex; flex-wrap: wrap; justify-content: space-evenly; margin: 0 auto; background-color: aquamarine;}
+.today_nav {width: 1245px; height: 40px; display: flex; background-color: pink;}
+.content1 ul {display: flex;}
+.content1 ul li {padding: 15px 20px 0;}
+.today_book {width: 1320px; height: 290px; background-color: brown;}
+.today_ad {width: 1320px; height: 200px; display: flex; justify-content: space-evenly; align-items: center;}
+.today_ad img {width: 48%; height: 100%; object-fit: fill; border-radius: 10px;}
+
+
+/* content2 */
+.content2 {width: 1320px; height: 1000px; display: flex; flex-wrap: wrap; align-content:space-around; margin: 0 auto; background-color:rosybrown;}
+.author_button {width: 1320px; height: 50px; display: flex; align-items: center; justify-content: space-between;}
+.author {width: 1320px; height: 360px; }
+.author_b {display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;}
+.pub {width: 1320px; height: 360px;}
+
+
+/* content3 */
+.content3 {width: 1320px; height:500px; display: flex; flex-wrap: wrap; margin: 0 auto; background-color: royalblue;}
+.md_nav {width: 1245px; height: 40px; display: flex; background-color: pink;}
+.md_pick {width: 1320px; margin-top: -50px; background-color: rosybrown;}
+.MD {height: 360px;}
+.md_b {width: 100%; height: 300px; display: flex; flex-wrap: wrap; justify-content: center;}
+.content3 ul {display: flex; margin-left: 25px;}
+.content3 ul li {padding: 10px 20px 0;}
