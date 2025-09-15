@@ -1,168 +1,843 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>교보문고</title>
+
+    <!-- 반응형 슬라이드 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <!-- css -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
-<header>
-    <div class="container">
+
+<body>
+    <!-- header -->
+    <header>
         <div class="header_top">
-            <div class="sub_navi">
-                <ul>
-                    <ol>교보문고</ol>
-                    <ol>eBook</ol>
-                    <ol>sam</ol>
-                    <ol>핫트랙스</ol>
-                    <ol>스토리</ol>
-                    <ol>브랜드 더보기</ol>
-                </ul>
-            </div>
-            <div class="login">
-                <ul>
-                    <ol>회원가입</ol>
-                    <ol>로그인</ol>
-                    <ol>회원혜택</ol>
-                    <ol>주문배송</ol>
-                    <ol>매장안내</ol>
-                    <ol>고객센터</ol>
-                </ul>
+            <div class="container">
+                <img src="./img/headbanner.jpg" alt="헤더 광고">
+                <div class="h_left">
+                    <div class="white"></div>
+                    <svg width="360" height="42" viewBox="0 0 226 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9_267)">
+                            <path
+                                d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath>
+                                <rect width="226" height="42" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="sub_navi nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="42" viewBox="0 0 700 42">
+                            <g transform="translate(4 0)">
+                                <g><a target="_self" class="service_mall_link" href="https://www.kyobobook.co.kr/">
+                                        <path
+                                            d="M0 0.0173792H84.361C84.361 0.0173792 99.2952 -1.02301 106.196 12.9956C113.924 28.6956 121.181 32 132 32H0V0.0173792Z"
+                                            transform="translate(0 0)" fill="#474BAA"></path><text x="35" y="15"
+                                            dy=".5em" fill="#ffffff" class="font-weight-bold font-text-l">교보문고</text>
+                                    </a></g>
+                            </g>
+                            <g transform="translate(89 0)">
+                                <g><a target="_self" class="service_mall_link" href="https://ebook.kyobobook.co.kr/">
+                                        <path
+                                            d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z"
+                                            transform="translate(0 0)" fill="#1970E1"></path><text x="48" y="14"
+                                            dy=".5em" fill="#ffffff" class="font-weight-bold font-text-l">eBook</text>
+                                    </a></g>
+                            </g>
+                            <g transform="translate(177 0)">
+                                <g><a target="_self" class="service_mall_link" href="https://sam.kyobobook.co.kr/">
+                                        <path
+                                            d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z"
+                                            transform="translate(0 0)" fill="#06bbc0"></path><text x="53" y="13.5"
+                                            dy=".5em" fill="#ffffff" class="font-weight-bold font-text-xl">sam</text>
+                                    </a></g>
+                            </g>
+                            <g transform="translate(265 0)">
+                                <g><a target="_self" class="service_mall_link"
+                                        href="https://hottracks.kyobobook.co.kr/">
+                                        <path
+                                            d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z"
+                                            transform="translate(0 0)" fill="#e8422f"></path><text x="42" y="15"
+                                            dy=".5em" fill="#ffffff" class="font-weight-bold font-text-l">핫트랙스</text>
+                                    </a></g>
+                            </g>
+                            <g transform="translate(353 0)">
+                                <g><a target="_blank" class="service_mall_link"
+                                        href="https://storynew.kyobobook.co.kr/story/main/initMain.ink">
+                                        <path
+                                            d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z"
+                                            transform="translate(0 0)" fill="#d5d5d5"></path>
+                                        <path
+                                            d="M121.828 28.7996C123.66 30.0032 125.679 30.9125 127.806 31.4952H47.0166V31.4951L47.0081 31.4952C44.4759 31.5385 41.9478 31.287 39.4784 30.7468C37.1367 30.2136 34.9175 29.2714 32.9317 27.9667C28.6481 25.1483 24.8828 20.35 21.1012 12.7779C18.8166 7.99502 14.8635 4.13906 9.93539 1.87688L9.93539 1.87687L9.93245 1.87555C8.72698 1.33158 7.48321 0.878194 6.2122 0.517991H87.913H87.9289L87.9447 0.516988C88.0256 0.511856 88.2569 0.500058 88.6226 0.5C91.8611 0.535181 95.0615 1.17502 98.0463 2.38279C100.332 3.30878 102.439 4.59572 104.281 6.1904C106.531 8.17342 108.356 10.5597 109.654 13.2141L109.656 13.2176C113.469 20.8625 117.331 25.8412 121.828 28.7995L121.828 28.7996Z"
+                                            transform="translate(0 0)" fill="#ffffff" stroke="#d5d5d5"></path><text
+                                            x="48" y="15" dy=".5em" fill="#767676"
+                                            class="font-weight-medium font-text-l">스토리</text>
+                                    </a></g>
+                                <g transform="translate(87 6)" fill="none">
+                                    <g>
+                                        <path d="M5 2H10V7" stroke="#CCCCCC" stroke-linecap="round"></path>
+                                        <path d="M10 2L4 8" stroke="#CCCCCC" stroke-linecap="round"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="login_nav">
+                    <ul>
+                        <li>회원가입</li>
+                        <li class="line">|</li>
+                        <li>로그인</li>
+                        <li class="line">|</li>
+                        <li>회원혜택</li>
+                        <li class="line">|</li>
+                        <li>주문배송</li>
+                        <li class="line">|</li>
+                        <li>매장안내</li>
+                        <li class="line">|</li>
+                        <li>고객센터</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header_bottom">
             <div class="header_left">
-                <div class="logo"></div>
-                <div class="search"></div>
+                <div class="logo">
+                    <img alt="교보문고" loading="eager" width="180" height="66" decoding="async" data-nimg="1"
+                        style="color: transparent; width: 180px; height: 66px;"
+                        src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg">
+                </div>
+                <div class="search">
+                    <option>
+                        <select>통합검색</select>
+                        <!-- <select>교보문고</select>
+                        <select>eBook</select>
+                        <select>sam</select>
+                        <select>핫트랙스</select> -->
+                    </option>
+                    <input type="search" class="search_b" placeholder="  김애란 8년 만의 신작 소설집" autocomplete="off">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 16 16"
+                        stroke="black">
+                        <desc>검색 아이콘</desc>
+                        <g stroke="current" clip-path="url(#ico_search_svg__a)">
+                            <path d="M7 11.333a4.333 4.333 0 1 0 0-8.666 4.333 4.333 0 0 0 0 8.666Z"></path>
+                            <path stroke-linecap="round" d="m10.333 10.333 3 3"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="ico_search_svg__a">
+                                <path fill="#fff" d="M0 0h16v16H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
                 <div class="main_menu">
                     <ul>
-                        <ol><i class="fa-solid fa-bars"></i></ol>
-                        <ol>신학기혜택</ol>
-                        <ol>버핏과멍거</ol>
-                        <ol>베스트</ol>
-                        <ol>신상품</ol>
-                        <ol>이벤트</ol>
-                        <ol>바로펀딩</ol>
-                        <ol>PICKS</ol>
-                        <ol>CASTing</ol>
-                        <ol>컬처라운지</ol>
+                        <li><button class="m_button"><i class="fa-solid fa-bars"></i></button></li>
+                        <li class="green"><b>신학기혜택</b></li>
+                        <li class="green"><b>버핏과멍거</b></li>
+                        <li>베스트</li>
+                        <li>신상품</li>
+                        <li>이벤트</li>
+                        <li>바로펀딩</li>
+                        <li>PICKS</li>
+                        <li>CASTing</li>
+                        <li>컬처라운지</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                <desc>더보기 활성화 전 아이콘</desc>
+                                <g clip-path="url(#ico_more_svg__a)">
+                                    <path fill="#EAEAEA"
+                                        d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10">
+                                    </path>
+                                    <path fill="#767676" d="M9.5 13.5v-3h-3v-1h3v-3h1v3h3v1h-3v3z"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="ico_more_svg__a">
+                                        <path fill="#fff" d="M0 0h20v20H0z"></path>
+                                    </clipPath>
+                                </defs>
+                            </svg></li>
                     </ul>
                 </div>
             </div>
-                <div class="header_right">
-                    <div class="mypage">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <div class="mission">
-                        <ul>
-                            <ol>오늘의 미션</ol>
-                            <ol>할인혜택</ol>
-                            <ol>버핏과 멍거</ol>
-                        </ul>
-                    </div>
+            <div class="header_right">
+                <div class="mypage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none" viewBox="0 0 16 16"
+                        stroke="black">
+                        <desc>장바구니 아이콘</desc>
+                        <g stroke="current" clip-path="url(#ico_cart_svg__a)">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2 2.667h1.123c.204.004.4.08.554.214.154.135.257.32.29.523l1.015 5.859a.9.9 0 0 0 .29.522.87.87 0 0 0 .554.215h6.448a.87.87 0 0 0 .537-.2.88.88 0 0 0 .298-.495l.86-4.123a.914.914 0 0 0-.448-1.035.9.9 0 0 0-.387-.104H6.667">
+                            </path>
+                            <path stroke-miterlimit="10"
+                                d="M6.333 13.333a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM11.667 13.333a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z">
+                            </path>
+                        </g>
+                        <defs>
+                            <clipPath id="ico_cart_svg__a">
+                                <path fill="#fff" d="M0 0h16v16H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                        <desc>My 아이콘</desc>
+                        <path fill="url(#ico_my_svg__a)"
+                            d="M48 24C48 10.745 37.255 0 24 0S0 10.745 0 24s10.745 24 24 24 24-10.745 24-24"></path>
+                        <path fill="#fff"
+                            d="M17.807 33a3.06 3.06 0 0 1-2.828-1.888 3.1 3.1 0 0 1-.233-1.17 5.354 5.354 0 0 1 5.355-5.355h7.801a5.354 5.354 0 0 1 5.352 5.354A3.06 3.06 0 0 1 30.196 33zm-1.378-3.059a1.38 1.38 0 0 0 1.378 1.377h12.39a1.38 1.38 0 0 0 1.377-1.377 3.677 3.677 0 0 0-3.67-3.672h-7.801a3.675 3.675 0 0 0-3.674 3.672m2.524-11.664a5.046 5.046 0 0 1 8.617-3.569 5.047 5.047 0 1 1-8.617 3.569m1.682 0a3.366 3.366 0 1 0 6.731.001 3.366 3.366 0 0 0-6.73-.001">
+                        </path>
+                        <defs>
+                            <linearGradient id="ico_my_svg__a" x1="24" x2="24" y1="0" y2="48"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6BCB45"></stop>
+                                <stop offset="1" stop-color="#4DAC27"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="mission">
+                    <ul>
+                        <li>오늘의 미션</li>
+                        <li>할인혜택</li>
+                        <li>버핏과 멍거</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
 
-
+    <!-- slider -->
     <div id="slider">
-        <div class="swiper slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+        <div class="slider_i">
+            <div class="swiper slider" style="border-radius: 10px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/slider1.jpg" alt="슬라이더1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider2.jpg" alt="슬라이더2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider3.jpg" alt="슬라이더3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider4.jpg" alt="슬라이더4">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-            <div class="swiper-pagination"></div>
+        </div>
+        <div class="funding">
+            <div class="swiper s_funding">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/fund1.jpg" alt="fund1">
+                        <div class="fund1">
+                            <h3>공식 무삭제판 인터뷰집<br>바로펀딩</h3>
+                            <p>너드커넥션과의 특별 GV</p>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fund2.jpg" alt="fund2">
+                        <div class="fund2">
+                            <h3>오늘만 특가<br>바인 가방 걸이 스탠드</h3>
+                            <p>[추석 쿠폰 적용가] 오늘만 17,900원!</p><br><br>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./img/fund3.jpg" alt="fund3">
+                        <div class="fund3">
+                            <h3>오늘만 특가<br>이나피스퀘어 에코백</h3>
+                            <p>[한정수량] 오늘만 무배 +13,500원!</p><br><br>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./img/fund4.jpg" alt="fund4">
+                        <div class="fund4">
+                            <h3>최소한의 생존 체력 운동<br>바로펀딩</h3>
+                            <p>직장인 체력 전문 코치 백관장의 첫 책</p><br><br>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./img/fund5.jpg" alt="fund5">
+                        <div class="fund5">
+                            <h3>밀크T 무료체험 혜택<br>전원 상품권을 드려요!</h3>
+                            <p>전과목 무제한 수강 + 상품권</p><br><br>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="./img/fund6.jpg" alt="fund6">
+                        <div class="fund6">
+                            <h3>오늘만 특가<br>무아스 듀얼 LED 무드등</h3>
+                            <p>[추석 쿠폰 적용가] 오늘만 29,900원!</p><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="img_nav">
+            <div class="icon">
+                <img src="./img/menu1.svg" alt=메뉴이미지>
+                <p>할인혜택</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu2.svg" alt=메뉴이미지>
+                <p>오늘만 특가</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu3.svg" alt=메뉴이미지>
+                <p>APP혜택</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu4.svg" alt=메뉴이미지>
+                <p>기프트카드</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu5.svg" alt=메뉴이미지>
+                <p>바로출판</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu6.svg" alt=메뉴이미지>
+                <p>이달의 책</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu7.svg" alt=메뉴이미지>
+                <p>손글씨캠페인</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu8.svg" alt=메뉴이미지>
+                <p>사은품</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu9.svg" alt=메뉴이미지>
+                <p>추천</p>
+            </div>
+            <div class="icon">
+                <img src="./img/menu10.svg" alt=메뉴이미지>
+                <p>책그리고꽃</p>
+            </div>
+        </div>
+        <div class="mission_nav">
+            <img src="./img/fund_b_ad.jpg" alt="펀딩아래광고">
+        </div>
+
+    </div>
+    <!-- content1 -->
+    <div class="content1">
+        <div class="today_nav">
+            <h1>오늘의 선택</h1>
+            <ul>
+                <li>국내도서</li>
+                <li class="line">|</li>
+                <li>외국도서</li>
+                <li class="line">|</li>
+                <li>eBook</li>
+                <li class="line">|</li>
+                <li>sam</li>
+                <li class="line">|</li>
+                <li>핫트랙스</li>
+                <li class="line">|</li>
+                <li>교보only</li>
+            </ul>
+        </div>
+        <button class="plus"><b>더보기 +</b></button>
+        <div class="today_book">
+            <div class="today_main">
+                <div class="swiper today_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_main_box"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> 
+                </div>
+            </div>
+            <div class="today_3b">
+                <div class="swiper td_b">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="today_sub_box"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> 
+                </div>
+            </div>
+        </div>
+        <div class="today_ad">
+            <img src="./img/today_ad1.png" alt="ad">
+            <img src="./img/today_ad2.png" alt="ad">
         </div>
     </div>
 
-    <div class="most">
-        <!-- Swiper -->
-        <div class="swiper most_book">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+
+    <!-- content2 -->
+    <div class="content2">
+        <div class="swiper author">
+            <div class="author_button">
+                <h2> 61인의 작가가 권하는 한 권의 책</h2>
+                <button class="plus"><b>더보기 +</b></button>
             </div>
-            <div class="swiper-pagination"></div>
+            <br>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="author_b"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper pub">
+            <h2>출판사에서 자신있게 추천해요</h2>
+            <br>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+                <div class="swiper-slide"><div class="pub_b"></div></div>
+            </div>
         </div>
     </div>
+
+    <!-- content3 -->
+    <div class="content3">
+        <div class="md_nav">
+            <h2>MD들이 신중하게 골랐어요</h2>
+            <ul>
+                <li>국내도서</li>
+                <li>외국도서</li>
+                <li>eBook</li>
+                <li>sam</li>
+                <li>핫트랙스</li>
+                <li>교보only</li>
+            </ul>
+        </div>
+        <button class="plus"><b>더보기 +</b></button>
+        <div class="md_pick">
+            <div class="swiper MD">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="md_b"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- content 8 -->
+    <div class="content8">
+        <div class="content8_top">
+            <div class="casting">
+                <h2>CASTing</h2>
+            </div>
+            <button class="plus"><b>더보기 +</b></button>
+            <div class="CASTing">
+                <div class="swiper cast">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting1.jpg" alt="casting">
+                                <p>『이효석문학상 수상작품집 2025』 수상자 인터뷰 | 이희주, ...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting2.jpg" alt="casting">
+                                <p>르누아르: 예술은 아름다워야 한다. 어떤 상황에서도</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting3.png" alt="casting">
+                                <p>불안함을 자신감으로 바꾸는 마음 연습, 《괜찮은 척 애쓰는 마음》...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting4.jpg" alt="casting">
+                                <p>베르나르 베르베르가 그리는 포스트 아포칼립스</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting5.jpg" alt="casting">
+                                <p>한 줄이면 충분한 써드림 한줄평 공모전</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting6.jpg" alt="casting">
+                                <p>미치도록 보고싶었던 돈의 얼굴</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting7.jpg" alt="casting">
+                                <p>리처드 도킨스 만년의 걸작 『불멸의 유전자』#궁금해못참</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting8.jpg" alt="casting">
+                                <p>『슬픔의 틈새』 이금이, "우리 곁에 살아있는, 잊지 말아야 할 기..."</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting9.jpg" alt="casting">
+                                <p>색과 향의 앤솔러지 『초록 땀』 김화진, 문진영, 이서수, 공현진,...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cas_box">
+                                <img src="./img/casting10.jpg" alt="casting">
+                                <p>『서울 한 바퀴, 둘레길 여행』이준휘 “서울은 탐험해볼 곳이 여...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content8_bottom">
+            <div class="event">
+                <h2>이벤트의 정성이 달라요</h2>
+                <div class="event_nav">
+                    <ul>
+                        <li>교보문고</li>
+                        <li class="line">|</li>
+                        <li>eBook</li>
+                        <li class="line">|</li>
+                        <li>핫트랙스</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="plus"><b>더보기 +</b></button>
+            <div class="event_box">
+                <img src="./img/event1.jpg" alt="">
+                <img src="./img/event2.jpg" alt="">
+                <img src="./img/event3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="banner">
+        <div class="b_left">
+            <span><b>공지사항</b></span>
+            <p>ReadLog 서비스 이관 안내(08/29)</p>
+            <button class="plus"><b>더보기 +</b></button>
+        </div>
+        <div class="b_right">
+            <span><b>당첨자발표</b></span>
+            <p>[로맨스/BL소설][25년 8월] 로B 50년 대여 💸 어랏! 캐시 💸(지연 안내)</p>
+            <button class="plus"><b>더보기 +</b></button>
+        </div>
+    </div>
+
 
     <footer>
-        <div class="container">
-            <div class="footer_left">
+        <div class="footer_left">
+            <div class="f_logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="55" fill="none" viewBox="0 0 150 55">
+                    <path fill="#081D58"
+                        d="M37.663 29.31a6.94 6.94 0 0 0-5.052 1.906 8.42 8.42 0 0 0-2.152 6.075 8.42 8.42 0 0 0 2.152 6.074 7.625 7.625 0 0 0 10.125 0 8.52 8.52 0 0 0 2.125-6.074 8.51 8.51 0 0 0-2.125-6.075 7 7 0 0 0-5.073-1.905m2.922 12.39a3.64 3.64 0 0 1-2.922 1.334 3.6 3.6 0 0 1-2.903-1.333 7.16 7.16 0 0 1-1.139-4.412 7.2 7.2 0 0 1 1.14-4.41 3.58 3.58 0 0 1 2.902-1.313 3.62 3.62 0 0 1 2.922 1.312 7.2 7.2 0 0 1 1.125 4.411 7.15 7.15 0 0 1-1.125 4.412M77.118 31.216a7.69 7.69 0 0 0-10.133 0 8.45 8.45 0 0 0-2.137 6.075 8.46 8.46 0 0 0 2.145 6.074 7.633 7.633 0 0 0 10.132 0 8.5 8.5 0 0 0 2.125-6.074 8.48 8.48 0 0 0-2.125-6.075m-2.15 10.485a3.85 3.85 0 0 1-5.83 0 7.2 7.2 0 0 1-1.134-4.41 7.24 7.24 0 0 1 1.134-4.41 3.893 3.893 0 0 1 5.83 0 7.2 7.2 0 0 1 1.125 4.412 7.15 7.15 0 0 1-1.125 4.41M23.34 44.924a1.46 1.46 0 0 1-.387-1.068v-5.545l5.17-8.663h-3.54c.25.25.28.662-.03 1.15l-2.798 4.85c-2.354-4.262-2.351-4.383-2.778-5.16-.331-.585-.614-.84-1.242-.84h-2.788c.366.391.678.83.925 1.306l4.125 7.317v5.584a1.46 1.46 0 0 1-.385 1.068zM49.791 44.924a1.45 1.45 0 0 0 .389-1.068V30.71a1.44 1.44 0 0 0-.389-1.066h5.059c2.425 0 4.542 1.17 4.542 3.442a3.38 3.38 0 0 1-1.561 2.928 4.125 4.125 0 0 1 2.804 3.907 4.75 4.75 0 0 1-1.841 3.762 6.03 6.03 0 0 1-3.944 1.237zm3.35-9.508a5 5 0 0 0 2.16-.26 1.64 1.64 0 0 0 1.038-1.585 1.834 1.834 0 0 0-1.97-1.726 3.9 3.9 0 0 0-1.228.156zm3.31 6.935a2.42 2.42 0 0 0 1.079-2.24 2.59 2.59 0 0 0-2.888-2.446 11 11 0 0 0-1.5.088v4.896a4.82 4.82 0 0 0 3.31-.299M1.637 43.856a1.45 1.45 0 0 1-.388 1.068h3.735a1.45 1.45 0 0 1-.387-1.068v-5.968l4.336 6.197a1.47 1.47 0 0 0 1.34.843h3a7.2 7.2 0 0 1-1.076-1.308l-4.9-6.942 5-7.03H8.623c.19.25.215.56-.144 1.162l-3.875 5.598V30.71a1.44 1.44 0 0 1 .388-1.067H1.248a1.44 1.44 0 0 1 .388 1.067z">
+                    </path>
+                    <path fill="#45B035"
+                        d="M84.044 8.725a3.53 3.53 0 0 0-5.057.276c-1.767 1.858-3.14 2.55-4.777 2.48-2.285-.1-3.412-1.866-4.586-4.096a6.02 6.02 0 0 0-5.425-3.634 5.927 5.927 0 0 0-5.875 6.297A10.77 10.77 0 0 0 64.4 19.5c1.99.999 4.18 1.537 6.408 1.574a19.3 19.3 0 0 1-.875 3.976h4.203a19 19 0 0 1-.89-4.11c6.157-.799 9.08-3.599 10.682-6.264a6.75 6.75 0 0 0 1.099-3.47 3.42 3.42 0 0 0-.973-2.482M64.228 11.92a2.153 2.153 0 1 1-.3-4.295 2.153 2.153 0 0 1 .3 4.295">
+                    </path>
+                    <path fill="#081D58" d="M141.741 35.4h-2.322v6.95h-4.435v1.82h13.773v-1.82h-7.01z"></path>
+                    <path fill="#081D58"
+                        d="M144.825 40.583h1.514c.567-2.915.97-6.56 1.205-9 .131-1.318.137-2.008-1.047-2.008h-10.345v1.819h8.673zM121.627 35.552h10.068v-6.039h-11.51v4.596a1.29 1.29 0 0 0 .358 1.085 1.28 1.28 0 0 0 1.084.363m7.478-1.824h-6.328v-2.401h6.328zM123.092 39.817h-2.588v3.584c-.029.195-.012.395.049.583a1.28 1.28 0 0 0 .803.808c.188.063.387.082.583.054h9.786v-1.82h-8.635z">
+                    </path>
+                    <path fill="#081D58"
+                        d="M118.889 38.638h6.015v2.835h2.588v-2.835h5.482v-1.82h-14.085zM95.01 35.891h-2.32v6.458H91.11V35.89h-2.322v6.458h-3.14v1.821h14.337V42.35h-4.979z">
+                    </path>
+                    <path fill="#081D58"
+                        d="M96.317 40.583h1.512c.569-2.915.969-6.56 1.206-9 .125-1.318.14-2.008-1.047-2.008H87.195v1.819h9.125zM110.733 39.242h-2.589v3.108h-5.923v1.82h14.35v-1.822h-5.838zM105.674 38.263h7.437a1.276 1.276 0 0 0 1.442-1.445v-7.394h-2.594v3h-5.135v-3h-2.594v7.394a1.274 1.274 0 0 0 1.444 1.445m6.286-4.027v2.462h-5.135v-2.462z">
+                    </path>
+                </svg>
+            </div>
+            <div class="f_nav">
                 <ul>
-                    <ol>회사소개</ol>
-                    <ol>이용약관</ol>
-                    <ol>개인정보처리방침</ol>
-                    <ol>청소년보호정책</ol>
-                    <ol>대량주문안내</ol>
-                    <ol>협력사여러분</ol>
-                    <ol>채용정보</ol>
-                    <ol>광고소개</ol>
+                    <li>회사소개</li>
+                    <li>이용약관</li>
+                    <li style="text-decoration: underline;">개인정보처리방침</li>
+                    <li>청소년보호정책</li>
+                    <li>대량주문안내</li>
+                    <li>협력사여러분</li>
+                    <li>채용정보</li>
+                    <li>광고소개</li>
                 </ul>
             </div>
-            <div class="footer_right">
-                
+            <div class="f_info">
+                <ul>
+                    <li>대표이사 : 허정도</li>
+                    <li>서울특별시 종로구 종로1</li>
+                    <li>사업자등록번호 : 102-81-11670</li>
+                </ul>
+                <ul>
+                    <li><b>대표전화 : 1544-1900(발신자 부담전화)</b></li>
+                    <li>FAX : 0502-987-5711(지역번호 공통)</li>
+                    <li>서울특별시 통신판매업신고번호 : 제 653호 <button> 사업자정보확인 </button></li>
+                </ul>
+                <br>
+                <span> KYOBO BOOK CENTRE</span>
             </div>
+        </div>
+        <div class="footer_right">
+            <div class="fr1">
+                <div class="f_family">
+                    <select>
+                        <option value="FS" disabled="" selected="" hidden=""> Family Site</option>
+                        <option value="교보생명">교보생명</option>
+                        <option value="교보증권">교보증권</option>
+                        <option value="교보DTS">교보DTS</option>
+                        <option value="교보리얼코">교보리얼코</option>
+                        <option value="교보악사자산운용">교보악사자산운용</option>
+                        <option value="교보라이프플래닛생명">교보라이프플래닛생명</option>
+                        <option value="KCA손해사정">KCA손해사정</option>
+                        <option value="KCA 서비스">KCA 서비스</option>
+                        <option value="교보자산신탁주식회사">교보자산신탁주식회사</option>
+                        <option value="교보AIM자산운용">교보AIM자산운용</option>
+                        <option value="교보다솜케어">교보다솜케어</option>
+                        <option value="A&D신용정보">A&D신용정보</option>
+                        <option value="대산문화재단">대산문화재단</option>
+                        <option value="교보교육재단">교보교육재단</option>
+                        <option value="대산농촌재단">대산농촌재단</option>
+                    </select>
+                </div>
+                <div class="sns">
+                    <img alt="유튜브" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                        style="color:transparent" src="./img/youtube.png">
+                    <img alt="facebook" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                        style="color:transparent" src="./img/facebook.png"></a>
+                    <img alt="인스타" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                        style="color:transparent" src="./img/insta.png">
+                </div>
+            </div>
+            <div class="fr2">
+                <p>토스페이먼츠 구매안전서비스</p>
+                <p>고객님은 안전거리를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+            </div>
+            <div class="fr3">
+                <div class="f_logo_left">
+                    <div class="f_sublogo">
+                        <img src="./img/f_logo.png" alt="f_logo">
+                    </div>
+                    <p>정보보호관리체계 <br> ISMS 인증획득</p>
+                </div>
+                <div class="f_logo_right">
+                    <p>[인증범위] 인터넷 교보문고 및 브랜드 서비스 운영<br>
+                        [유효기간] 2023.11.15 ~ 2026.11.14</p>
+                </div>
+            </div>
+
         </div>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-<script>
-    // // slider
-    // var swiper = new Swiper(".mySwiper", {
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    // });
+    <!-- 카카오에서 책정보 가져오기 -->
+    <script src="./js/book_today_main.js"></script>
+    <script src="./js/book_today_sub.js"></script> 
+    <script src="./js/book_author.js"></script>
+    <script src="./js/book_pub.js"></script>
+    <script src="./js/book_md.js"></script>
 
-    var swiper = new Swiper(".slider", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-    });
-    // most_book
-    var swiper = new Swiper(".most_book", {
-        slidesPerView: 6,
-        spaceBetween: 24,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+    <!-- Initialize Swiper -->
+     <script>
 
+        var swiper = new Swiper(".today_swiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper(".td_b", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-</script>
+        var swiper = new Swiper(".slider", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".s_funding", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".author", {
+            slidesPerView: 6,
+            spaceBetween: 24,
+        });
+        var swiper = new Swiper(".pub", {
+            slidesPerView: 6,
+            spaceBetween: 24,
+        });
+        var swiper = new Swiper(".MD", {
+            slidesPerView: 6,
+            spaceBetween: 24,
+        });
+        var swiper = new Swiper(".cast", {
+            slidesPerView: 6,
+            spaceBetween: 24,
+        });
+    </script>
 
 </body>
+
 </html>

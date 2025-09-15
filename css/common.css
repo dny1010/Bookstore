@@ -1,36 +1,173 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'GowoonDodum';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul, ol {list-style: none;}
 a {text-decoration: none; color: #333;}
-body {font-family: "GowoonDodum";}
-.container {width: 1320px; height: 100%; margin: 0 auto; background-color:#aaa;}
+body {font-family: "Pretendard";}
+.container {width: 1320px; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto; }
+
 
 /* header */
-header {width: 100%; height: 300px; background-color:gold;}
+header {width: 100%; height: 300px;}
 
-.header_top {width: 100%; height: 40%; display: flex; justify-content:right; align-items:end; background-color:pink;}
-.sub_navi {width: 670px; height: 38px; background:white; flex-direction:column; text-align:center;}
-.login {width: 395px; height:38px; background-color:tomato;}
+/* header top */
+.header_top {width: 100%; height: 40%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content:center; align-items:flex-end; background-color:#f5f5f5}
 
-.header_bottom {width: 100%; height: 60%; display: flex; align-items: space-evenly; background-color:aquamarine;}
-.header_left {width: 920px; height: 100%; background-color:brown;}
-.logo {width: 205px; height: 105px; display: inline-block; background-color:rgb(91, 160, 74);}
+.white {width: 40%; height: 42px; justify-self: left; background-color: #fff;position: absolute; top:8px; left: -300px;}
+.header img {align-self: center;}
+
+.header_top .h_left {display: flex; width: 70%; position: relative;}
+.header_top .h_left >svg {position: relative; margin-top:8px;}
+
+.sub_navi {width: 670px; height: 38px; margin-left: -120px; padding-top: 18px; background-color:#f5f5f5}
+
+.login {width: 395px; height:38px; padding-top: 10px;}
+.login_nav {display: flex; align-items: center;}
+.login_nav ul {display: flex; padding: 5px;}
+.login_nav ul li {padding: 6px 3px 0; font-size: 13px; cursor: pointer; color: gray;}
+.login_nav ul .line {padding-top: 7px; text-align: center; font-size: 10px;}
+
+.nav ul {margin: 5px auto; display: flex; text-align: center; justify-content: space-evenly;}
+
+/* header bottom */
+.header_bottom {width: 1320px; height: 60%; margin: 0 auto; display: flex; align-content: center;}
+
+/* header bottom - left */
+.header_left {width: 920px; height: 100%; padding-left: 5px; display: flex; flex-wrap: wrap; justify-content: flex-start; align-content: center;}
+
+.logo {width: 205px; height: 105px; display: flex; justify-content:center; align-items: center; padding-bottom: 10px; }
 .logo i {font-size: 50px; color:#fff;}
-.search {width: 620px; height: 55px; display: inline-block; position: relative; margin : 20px; background-color: plum;}
-.main_menu {width: 915px; height: 50px; position: relative; margin : 5px 0px; background-color:red;}
 
-.header_right {width: 400px; height: 100%; display: inline-block; align-items: bottom; background-color: beige;}
-.mypage {width: 117px; height: 60px; background-color: blue;}
-.mission {width: 270px; height: 50px; background-color:aqua;}
+.search {width: 600px; height: 55px; display:flex; justify-content: space-evenly; align-items: center; margin: 25px 10px; border-radius: 25px; border: 1px solid #aaa; }
+.search_b {width: 400px; height: 50px; border-style: none; font-size: 16px;}
+
+.m_button {width: 45px; height: 45px; display: flex; justify-content:center; align-items: center; border: 1px solid #aaa; border-radius: 25px; background-color: white;}
+.m_button i {font-size: 18px;}
+
+.main_menu {width: 915px; height: 50px; margin : 5px 0px;}
+.main_menu ul {margin: 12px auto; display: flex; text-align: center; justify-content: space-evenly; align-items: center;}
+.main_menu ul li {font-size: 16px;}
+.main_menu ul .green b {color: green;}
+.main_menu ul svg {margin: 3px;}
+
+/* header bottom - right */
+.header_right {width: 400px; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-end; margin: 3px;}
+
+.mypage {width: 117px; height: 60px; display: flex;  justify-content: space-around; align-items: center; margin-top: 10px;}
+
+.mission {width: 270px; height: 50px;}
+.mission ul {margin: 12px auto; display: flex; text-align: center; justify-content: space-evenly; }
+.mission ul li {cursor: pointer; color: gray;}
+
+
+
+/* foot banner */
+.banner {width: 100%; height: 70px; display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto; border: 1px; border-style: solid none;}
+
+.b_left {width: 655px; height: 40px; display: flex; justify-content: space-around; align-items: center;}
+.b_left .plus {margin-left: 160px; }
+.b_right {width: 655px; height: 40px; display: flex; justify-content: space-around; align-items: center;}
 
 
 /* footer */
-footer {width: 100%; height: 320px; display: flex; background-color: orange;}
-.footer_left {width: 875px; height: 100%; background-color: blueviolet;}
-.footer_right {width: 425px; height: 100%; background-color: burlywood;}
+footer {width: 1320px; height: 320px; display: flex; justify-content: space-between; margin: 0 auto;}
+
+/* footer_left */
+.footer_left {width: 875px; height: 100%; display: flex; flex-wrap:wrap; align-items: center;}
+
+.f_logo {width: 175px; height: 75px; padding: 10px;}
+
+.f_nav {width: 800px; height: 40px; padding: 8px 0;}
+.f_nav ul {display: flex; text-align: left; color: gray;}
+.f_nav ul li {position: relative; padding: 0 8px; border-right: 1px solid #ccc;}
+.f_nav ul li:last-child {border-right: none;}
+
+.f_info {width: 800px; height: 110px;}
+.f_info ul {display: flex; text-align: left; margin-left: 5px; font-size: 12px;}
+.f_info ul li {position: relative; padding: 0 3px; border-right: 1px solid #ccc;}
+.f_info ul li:last-child {border-right: none;}
+.f_info ul li button {margin-left: 5px; border: 1px solid #aaa;}
+.f_info span {margin-left: 8px;}
+
+/* footer_right */
+.footer_right {width: 425px; height: 100%; display: flex; flex-wrap:wrap; justify-content: center; align-items: center;}
+
+.fr1 {width: 390px; height: 100px; display: flex; justify-content: space-evenly; align-items: center; padding-top: 10px;}
+
+.f_family {width: 225px; height: 45px; display:flex; justify-content: center;}
+.f_family select {width: 225px; height: 45px; border: 1px solid #aaa; border-radius: 10px; color: #333;}
+
+.sns {width: 125px; height: 45px; margin-top: 10px; }
+
+.fr2 {width: 390px; height: 80px;}
+.fr2 p {color: gray; font-size: 14px;}
+
+.fr3 {width: 425px; height: 80px; display: flex; justify-content: space-around; align-items: center;}
+.f_sublogo {width: 65px; height: 80px;}
+.fr3 p {align-self: center; padding-bottom: 10px; color: grey; font-size: 14px;}
+.f_logo_left {width: 170px; height: 80px; display: flex;}
+.f_logo_right {width: 220px; height: 80px;}
