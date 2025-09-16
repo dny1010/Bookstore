@@ -222,6 +222,9 @@
             <div class="swiper slider" style="border-radius: 10px;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
+                        <img src="./img/slider0.jpg" alt="슬라이더0">
+                    </div>
+                    <div class="swiper-slide">
                         <img src="./img/slider1.jpg" alt="슬라이더1">
                     </div>
                     <div class="swiper-slide">
@@ -232,6 +235,18 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="./img/slider4.jpg" alt="슬라이더4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider5.jpg" alt="슬라이더5">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider6.jpg" alt="슬라이더6">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider7.jpg" alt="슬라이더7">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider8.jpg" alt="슬라이더8">
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -465,6 +480,8 @@
                         <div class="author_b"></div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
         <div class="pub_m">
@@ -542,6 +559,8 @@
                         <div class="md_b"></div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -561,7 +580,7 @@
                         <div class="swiper-slide">
                             <div class="cas_box">
                                 <img src="./img/casting1.jpg" alt="casting">
-                                <p>『이효석문학상 수상작품집 2025』 수상자 인터뷰 | 이희주, ...</p>
+                                <p>『이효석문학상 수상작품집 2025』 수상자 인터뷰 | 이희...</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -573,7 +592,7 @@
                         <div class="swiper-slide">
                             <div class="cas_box">
                                 <img src="./img/casting3.png" alt="casting">
-                                <p>불안함을 자신감으로 바꾸는 마음 연습, 《괜찮은 척 애쓰는 마음》...</p>
+                                <p>불안함을 자신감으로 바꾸는 마음 연습, 《괜찮은 척 애쓰는...</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -603,22 +622,24 @@
                         <div class="swiper-slide">
                             <div class="cas_box">
                                 <img src="./img/casting8.jpg" alt="casting">
-                                <p>『슬픔의 틈새』 이금이, "우리 곁에 살아있는, 잊지 말아야 할 기..."</p>
+                                <p>『슬픔의 틈새』 이금이, "우리 곁에 살아있는, 잊지 말아야..."</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="cas_box">
                                 <img src="./img/casting9.jpg" alt="casting">
-                                <p>색과 향의 앤솔러지 『초록 땀』 김화진, 문진영, 이서수, 공현진,...</p>
+                                <p>색과 향의 앤솔러지 『초록 땀』 김화진, 문진영, 이서수, 공...</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="cas_box">
                                 <img src="./img/casting10.jpg" alt="casting">
-                                <p>『서울 한 바퀴, 둘레길 여행』이준휘 “서울은 탐험해볼 곳이 여...</p>
+                                <p>『서울 한 바퀴, 둘레길 여행』이준휘 “서울은 탐험해볼 곳이...</p>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -643,7 +664,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- footer -->
 
     <div class="banner">
@@ -777,8 +798,8 @@ W
         var swiper = new Swiper(".today_swiper", {
             loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".td_b .swiper-button-next",
+                prevEl: ".today_swiper .swiper-button-prev",
             },
         });
         var swiper = new Swiper(".td_b", {
@@ -786,8 +807,8 @@ W
             spaceBetween: 30,
             loop: true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".td_b .swiper-button-next",
+                prevEl: ".today_swiper .swiper-button-prev",
             },
         });
 
@@ -804,8 +825,8 @@ W
                 disableOnInteraction: false,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".slider .swiper-button-next",
+                prevEl: ".slider .swiper-button-prev",
             },
         });
 
@@ -816,12 +837,16 @@ W
                 type: "fraction",
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".s_funding .swiper-button-next",
+                prevEl: ".s_funding .swiper-button-prev",
             },
         });
 
         var swiper = new Swiper(".author", {
+            navigation: {
+                nextEl: ".author .swiper-button-next",
+                prevEl: ".author .swiper-button-prev",
+            },
             slidesPerView: 6,
             spaceBetween: 24,
         });
@@ -830,10 +855,18 @@ W
             spaceBetween: 24,
         });
         var swiper = new Swiper(".MD", {
+            navigation: {
+                nextEl: ".MD .swiper-button-next",
+                prevEl: ".MD .swiper-button-prev",
+            },
             slidesPerView: 6,
             spaceBetween: 24,
         });
         var swiper = new Swiper(".cast", {
+            navigation: {
+                nextEl: ".cast .swiper-button-next",
+                prevEl: ".cast .swiper-button-prev",
+            },
             slidesPerView: 6,
             spaceBetween: 24,
         });
