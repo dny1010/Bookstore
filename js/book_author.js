@@ -42,7 +42,7 @@ async function bookData() {
             boxElements[i].appendChild(img);
 
             // <h3> 제목
-            const h3 = document.createElement("h4");
+            const h3 = document.createElement("h5");
             h3.textContent = doc.title;
             boxElements[i].appendChild(h3);
         }
